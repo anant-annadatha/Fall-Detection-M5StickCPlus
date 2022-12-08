@@ -80,7 +80,7 @@ void loop() {
   M5.update();
 
   M5.IMU.getAccelData(&accX, &accY, &accZ);
-  if ( (accX*accX + accY*accY + accZ*accZ) < 0.05 ) 
+  if ( (accX*accX + accY*accY + accZ*accZ) < 0.25 ) 
   {
     M5.Lcd.fillScreen(TFT_RED);
     M5.Lcd.setTextColor(TFT_WHITE);
